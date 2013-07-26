@@ -19,6 +19,8 @@ body{
 }
 
 
+/* Index Page ************/
+
 .container{
 
 
@@ -26,6 +28,12 @@ body{
 
 .headline h1{
 	font-family: 'Josefin Sans', sans-serif; font-weight: 700; font-style: italic;
-	font-size: 2em;
+	font-size: 2rem;
+
+}
+
+.about h1{
+	font-family: 'Josefin Sans', sans-serif; font-weight: 700; font-style: italic;
+	font-size: 2rem;
 
 }
