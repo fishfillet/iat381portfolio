@@ -20,12 +20,23 @@ body{
 }
 
 
+*,
+*:after,
+*:before {
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+
 /* Index Page ************/
 
 .header{
 	width: 100%;
 	min-width: 480px;
-	min-height: 150px;
+	min-height: 100px;
 	
 	background-color: #666A73;
 
@@ -33,34 +44,35 @@ body{
 
 
 
-.header ul{
+.nav ul{
 	position: absolute;
-	right: 100px;
+	right: 5%;
 	list-style-type: none;
 	margin-top: 20px;
 	padding:0;
-	border-top: 6px double black;
+	border-top: 3px solid black;
 	
 }
 
 
 
 
-.header ul li{
+.nav ul li{
 	position: relative;
 	display: inline;
 	font-family: 'Muli', sans-serif; font-weight: 300;
 	font-size: 1.5rem;
 	margin-left: 2rem;
+
 }
 
 
-.header ul > li:first-child{
+.nav ul > li:first-child{
 	margin-left: 0;
 }
 
 
-.header ul > li:first-child:after{
+.nav ul > li:first-child:after{
 	
 	content: " ";
 	position: absolute;
@@ -72,6 +84,8 @@ body{
 	background-color: black;
 
 }
+
+
 
 .header a{
 	color: black;
@@ -85,9 +99,9 @@ body{
 
 .content{
 	min-width: 480px;
-	max-width: 980px;
-	min-height: 600px;
-	height: 95%;
+	max-width: 1280px;
+	/*height: 95%;*/
+	width: 90%;
 	margin: 0 auto 0 auto;
 	padding: 0 2% 0 2%;
 	box-sizing: border-box;
@@ -96,38 +110,73 @@ body{
 
 }
 
+.headline{
+	margin:5rem auto;
+	padding:0 2.4rem;
+}
+
 
 .headline h1{
 	font-family: 'Josefin Sans', sans-serif; font-weight: 700; font-style: italic;
-	font-size: 2.5rem;
-	margin-bottom: 2em;
+	font-size: 3rem;
+
+/*	margin-bottom: 2em;
 	margin-left: 200px;
 	margin-top: 2rem;
+*/
+}
+
+.about{
+	margin:1.5rem auto;
+	padding:0 2.4rem;
 
 }
 
-.about img{
-	float: left;
-	max-width: 10em;
-	max-height: 10em;
-	margin-top: 5rem;
 
 
+/*
+
+solution> profile pic is one column, text_column is another, they sit
+side by side via inline-block display */
+
+.profilepic{
+	/*float: left;*/
+	display: inline-block;
+	width: 15%;
+	height: 16rem;
+	margin-top: 3.2rem;
+	margin-right: 9%;
+	vertical-align:top;   /* shit gets weird if you don't do this with inline-block*/
+	
+}
+
+.text_column {
+	width: 70%;
+	display: inline-block;
+	vertical-align:top;
+	margin-top: 3.2rem;
+}
+
+.profilepic img{
+	width: 100%;
+	
+	/*border-radius: 10rem;*/ /* round dat img bro */
 }
 
 .about h1{
 	font-family: 'Josefin Sans', sans-serif; font-weight: 700; font-style: italic;
-	font-size: 2rem;
-	margin-left: 150px;
-	padding-top: 110px;
-	
-
+	font-size: 2.5rem;
+	margin: 0 0 1rem 0;
+		/*margin-left: 200px;*/
+	/*padding-top: 110px;*/
 }
 
 .about p{
-	margin-left: 15rem;
+	/*margin-left: 200px;*/
+
 	font-size: 1.7rem;
-	line-height: 2rem;
+	line-height: 2.2rem;
+	color: #444;
 	
 }
 
