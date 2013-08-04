@@ -1,0 +1,29 @@
+/* works by matt*/
+
+.container-block:first-child,
+.container-block:last-child
+{
+	position: relative;
+	width:360px;
+	margin: 0 auto;
+	background: papayawhip;
+	height: 360px;
+	color:#000;
+
+}
+.container-block:first-child {
+	/*top: 200px;*/
+}
+.container-block:last-child {
+	margin-top: -200px;
+	background: red;
+}
+
+.hero-info
+	{
+		position: absolute;
+		font-size: 36px;
+		color:#000;
+		left: 0;
+
+	}
