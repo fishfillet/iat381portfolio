@@ -6,7 +6,6 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 
 html{
-	width: 100%;
 	height:100%;
 	font-size: 62.5%;  /* We can size rems in a way that is similar to using px */
 	line-height: 1;
@@ -14,7 +13,6 @@ html{
 }
 
 body{
-	width: 100%;
 	height:100%;
 	/*font-size: 1.4rem; /* =14px kinda */
 	font-family: 'Lato', sans-serif; font-weight: 400;
@@ -33,25 +31,30 @@ body{
 	-webkit-font-smoothing:antialiased;
 	font-smoothing:antialiased;
 	text-rendering:optimizeLegibility;
+	margin: 0;
 }
 
 h1{
 	font-size: 4.8rem;
+	font-family: 'Montserrat', sans-serif; font-weight: 700;
+	color: #444;
 
 }
 
 h2{
 	font-size: 2.6rem;
+	font-family: 'Montserrat', sans-serif; font-weight: 400;
 
 }
 
 h3{
 	font-size: 2.0rem;
+	font-family: 'Montserrat', sans-serif; font-weight: 400;
 
 }
 
 h6{
-	font-size: 1.6rem;
+	font-size: 1.2rem;
 }
 
 p{
@@ -107,7 +110,7 @@ p{
 
 .menu{
 	float: right;
-	border-top: 3px solid black;
+	border-top: 3px solid #444;
 }
 
 .menu ul{
@@ -153,11 +156,18 @@ p{
 }
 
 
+
+
 .content{
 	max-width: 1280px;
-	/*height: 95%;*/
+	
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+
+
 	width: 90%;
-	margin: 0 auto;
+	margin: 0 auto; /* the bottom margin is the negative value of the footer's height */
 	padding: 0 2%;
 /*	box-sizing: border-box;
 	-moz-box-sizing: border-box;*/
@@ -167,24 +177,26 @@ p{
 
 
 .headline{
-	margin: 8rem auto 12rem;
+	margin: 11rem auto 14rem;
 	padding: 0 2.4rem;
 }
 
 
 .headline h1{
-	font-family: 'Josefin Sans', sans-serif; font-weight: 700; font-style: italic;
-	
+	line-height: 5rem;
 
-/*	margin-bottom: 2em;
-	margin-left: 200px;
-	margin-top: 2rem;
-*/
+}
+
+.headline a{
+	color: black;
+	text-decoration: none;
 }
 
 .about{
 	margin:1.5rem auto;
 	padding:0 2.4rem;
+	line-height: 2.4rem;
+	color: #444;
 
 }
 
@@ -213,6 +225,8 @@ side by side via inline-block display */
 	margin-top: 3.2rem;
 }
 
+
+
 .profilepic img{
 	width: 100%;
 	
@@ -220,20 +234,12 @@ side by side via inline-block display */
 }
 
 .about h2{
-	font-family: 'Josefin Sans', sans-serif; font-weight: 700; font-style: italic;
-	
-	margin: 0 0 1rem 0;
+	/*margin: 0 0 1rem 0;*/
 	/*margin-left: 200px;*/
 	/*padding-top: 110px;*/
 }
 
-.about p{
-	/*margin-left: 200px;*/
 
-	
-	line-height: 2.2rem;
-	color: #444;
-}
 
 .about a{
 	font-family: 'Lato', sans-serif; font-weight: 700; font-style: bold;
@@ -242,15 +248,47 @@ side by side via inline-block display */
 }
 
 
+
+/********* work catalog */
+.work_catalog{
+	padding: 0 2.4rem;
+}
+
+.work_catalog li{
+	display: inline-block;
+	position: relative;
+	width: 25rem;
+	height: 25rem;
+	margin: 0 2rem 6.4rem 0;
+	background-color: #CCC;
+/*	border-width: 2px;
+	border-color: black;
+	border-style: solid;
+}*/
+
+
+
+
+
+
+
 /*********** footer */
 
+/*.push{
+	height: 142px;
+
+}*/
 .footer{
 	max-width: 1280px;
 	width: 90%;
-	margin: 30rem auto 2%;
-	padding: 0 2%;
+	height: 142px;
+	margin: 0 auto;
+	/*padding: 0 2%;*/
 	text-align: center;
+	border-top: 2px solid #444;
+
 }
+
 
 
 
