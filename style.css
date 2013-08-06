@@ -34,6 +34,9 @@ body{
 	margin: 0;
 }
 
+
+/* Font Sizes, Family, Weight *********/
+
 h1{
 	font-size: 4.8rem;
 	font-family: 'Montserrat', sans-serif; font-weight: 700;
@@ -44,10 +47,17 @@ h1{
 h2{
 	font-size: 2.6rem;
 	font-family: 'Montserrat', sans-serif; font-weight: 400;
+	line-height: 4rem;
 
 }
 
 h3{
+	font-size: 2.0rem;
+	font-family: 'Montserrat', sans-serif; font-weight: 400;
+
+}
+
+h4{
 	font-size: 2.0rem;
 	font-family: 'Montserrat', sans-serif; font-weight: 400;
 
@@ -59,9 +69,22 @@ h6{
 
 p{
 	font-size: 1.6rem;
+	line-height: 2.4rem;
 }
 
-/* Index Page ************/
+a{
+	border-bottom: 3px solid #F9F8F6;
+	-webkit-transition: border-bottom 0.2s ease;
+	-moz-transition: border-bottom 0.2s ease;
+	-o-transition: border-bottom 0.2s ease;
+	transition: border-bottom 0.2s ease;
+}
+
+a:hover{
+	border-bottom: 3px solid #444;
+}
+
+/* Header and Nav ************/
 
 .header{
 	width: 100%;
@@ -105,19 +128,29 @@ p{
 	float: left;
 	margin-left: 1rem;
 
+	border-bottom: 4px solid #F9F8F6;
+	-webkit-transition: border-bottom 0.2s ease;
+	-moz-transition: border-bottom 0.2s ease;
+	-o-transition: border-bottom 0.2s ease;
+	transition: border-bottom 0.2s ease;
+
+}
+
+.header_logo:hover{
+	border-bottom:4px solid #444;
+
 
 }
 
 .menu{
 	float: right;
-	border-top: 3px solid #444;
+	border-top: 5px solid #444;
 }
 
 .menu ul{
 	list-style-type: none;
 	margin-top: .5rem;
-	
-	
+
 }
 
 
@@ -128,6 +161,16 @@ p{
 	font-size: 1.6rem;
 	margin-left: 2rem;
 
+	border-bottom: 3px solid #F9F8F6;
+	-webkit-transition: border-bottom 0.2s ease;
+	-moz-transition: border-bottom 0.2s ease;
+	-o-transition: border-bottom 0.2s ease;
+	transition: border-bottom 0.2s ease;
+
+}
+
+.menu ul li:hover{
+	border-bottom:3px solid #444;
 }
 
 
@@ -156,7 +199,7 @@ p{
 }
 
 
-
+/* main body and content ***********/
 
 .content{
 	max-width: 1280px;
@@ -167,10 +210,8 @@ p{
 
 
 	width: 90%;
-	margin: 0 auto; /* the bottom margin is the negative value of the footer's height */
+	margin: 0 auto; 
 	padding: 0 2%;
-/*	box-sizing: border-box;
-	-moz-box-sizing: border-box;*/
 	position: relative;
 
 }
@@ -190,6 +231,16 @@ p{
 .headline a{
 	color: black;
 	text-decoration: none;
+
+	border-bottom: 3px solid #F9F8F6;
+	-webkit-transition: border-bottom 0.2s ease;
+	-moz-transition: border-bottom 0.2s ease;
+	-o-transition: border-bottom 0.2s ease;
+	transition: border-bottom 0.2s ease;
+}
+
+.headline a:hover{
+	border-bottom: 3px solid #444;
 }
 
 .about{
@@ -200,6 +251,17 @@ p{
 
 }
 
+.about a{
+	border-bottom: 2px solid #F9F8F6;
+	-webkit-transition: border-bottom 0.2s ease;
+	-moz-transition: border-bottom 0.2s ease;
+	-o-transition: border-bottom 0.2s ease;
+	transition: border-bottom 0.2s ease;
+}
+
+.about a:hover{
+	border-bottom: 2px solid #444;
+}
 
 
 /*
@@ -207,11 +269,9 @@ solution> profile pic is one column, text_column is another, they sit
 side by side via inline-block display */
 
 .profilepic{
-	/*float: left;*/
 	display: inline-block;
 	width: 15%;
 	height: 16rem;
-	/*margin-top: 3.2rem;*/
 	margin-right: 10%;
 	overflow: hidden;
 	vertical-align:top;   /* shit gets weird if you don't do this with inline-block*/
@@ -225,21 +285,10 @@ side by side via inline-block display */
 	margin-top: 3.2rem;
 }
 
-
-
 .profilepic img{
 	width: 100%;
 	
-	/*border-radius: 10rem;*/ /* round dat img bro */
 }
-
-.about h2{
-	/*margin: 0 0 1rem 0;*/
-	/*margin-left: 200px;*/
-	/*padding-top: 110px;*/
-}
-
-
 
 .about a{
 	font-family: 'Lato', sans-serif; font-weight: 700; font-style: bold;
@@ -261,12 +310,25 @@ side by side via inline-block display */
 	height: 25rem;
 	margin: 0 2rem 6.4rem 0;
 	background-color: #CCC;
+	vertical-align:top;
 /*	border-width: 2px;
 	border-color: black;
 	border-style: solid;
 }*/
+}
 
+.work_catalog li a{
+	text-decoration: none;
+	color: #444;
+}
 
+.work_catalog img{
+	width: 100%;
+}
+
+.work_catalog h3{
+	padding: 1rem 0 0 0;
+}
 
 
 
@@ -274,10 +336,8 @@ side by side via inline-block display */
 
 /*********** footer */
 
-/*.push{
-	height: 142px;
 
-}*/
+
 .footer{
 	max-width: 1280px;
 	width: 90%;
@@ -290,8 +350,103 @@ side by side via inline-block display */
 }
 
 
+/* Video layout ***************/
+
+.videoContent{
+	margin:1.5rem auto;
+	padding:0 2.4rem;
+	
+}
+
+.videoContent h3{
+	padding: 1.2rem 0 1.2rem;
+
+}
+
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Media Queries *************/
+
+@media screen and (min-width: 481px) and (max-width: 768px){
 
 
 
+
+
+.profilepic{
+	width: 100%;
+	height: auto;
+	margin-right: 0;
+	padding: 0 17rem;
+	overflow: hidden;
+
+	
+}
+
+.profilepic img{
+	padding: 0 auto;
+
+	min-width: 15rem;
+
+}
+
+
+.text_column {
+	width: 100%;
+	vertical-align:top;
+	margin-top: 3.2rem;
+}
+
+
+
+
+
+}
+
+
+
+@media screen and (max-width: 480px ){
+
+
+.profilepic{
+	width: 100%;
+	height: auto;
+	margin-right: 0;
+	padding: 0 10rem;
+	overflow: hidden;
+
+	
+}
+
+.profilepic img{
+	padding: 0 auto;
+
+	min-width: 10rem;
+
+}
+
+.text_column {
+	width: 100%;
+	vertical-align:top;
+	margin-top: 3.2rem;
+}
+
+
+
+
+}
 
 
