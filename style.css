@@ -139,7 +139,7 @@ a:hover{
 }
 
 .header_logo:hover{
-	border-bottom:4px solid #444;
+	border-bottom:2px solid #444;
 
 
 }
@@ -183,13 +183,13 @@ a:hover{
 
 .menu ul > li:first-child:after{ /*cicle between the links*/
 	content: " ";
-	position: absolute;
+	position: relative;
 	top: 6px;
 	right: -13px;
 	width: 5px;
 	height: 5px;
 	border-radius: 32px;
-	background-color: black;
+	background-color: blue;
 
 }
 
@@ -312,7 +312,7 @@ side by side via inline-block display */
 	height: 25rem;
 	margin: 0 2rem 6.4rem 0;
 	background-color: #CCC;
-	vertical-align:top;
+	vertical-align:bottom;
 /*	border-width: 2px;
 	border-color: black;
 	border-style: solid;
@@ -325,7 +325,7 @@ side by side via inline-block display */
 }
 
 .work_catalog img{
-	width: 100%;
+	width: 90%;
 }
 
 .work_catalog h3{
